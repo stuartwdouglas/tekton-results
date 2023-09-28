@@ -23,8 +23,8 @@ resources:
 - config-logging.yaml
 - config-observability.yaml
 
-patchesStrategicMerge:
-  - migrator.yaml
+patches:
+  - path: migrator.yaml
 
 configMapGenerator:
   # Create a ConfigMap containing the API configs.
